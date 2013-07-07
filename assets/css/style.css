@@ -108,7 +108,7 @@ body {
 	font-weight: bold;
 }
 .brand img {
-	margin-top: 25px;
+	/*margin-top: 25px;*/
 }
 .row {
 	margin-bottom: 70px;
@@ -379,7 +379,7 @@ input:focus, textarea:focus {
 .nav-active-arrow {
 	width: 0px;
 	height: 0px;
-	border-top:22px solid #86c543;
+	/*border-top:22px solid #86c543;*/
 	border-right:22px solid transparent;
 	bottom: 0;
 	top: 139px;

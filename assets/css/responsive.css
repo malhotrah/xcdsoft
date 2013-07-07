@@ -527,6 +527,7 @@
 	.search input {
 		width: 100%;
 	}
+    #tinynav1 { display: block !important; }
  
 }
 
@@ -537,3 +538,4 @@
 @media screen and (max-width: 767px) {
     #tinynav1 { display: block !important; }
 }
+

@@ -19,8 +19,11 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->template->build('home');
+        $data['home']=true;
+		$this->template->build('home',$data);
 	}
+
+
 }
 
 /* End of file welcome.php */
