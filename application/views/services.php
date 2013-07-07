@@ -16,7 +16,8 @@
                                     <div class="span12">
 
                                         <!-- slide #1 content -->
-                                        <h3 class="slider-heading">WE DO <span class="slider-highlight">MORE</span>&nbsp;&nbsp;THAN DESIGN</h3>
+                                        <h3 class="slider-heading">WE DO <span class="slider-highlight">MORE</span>&nbsp;&nbsp;THAN
+                                            DESIGN</h3>
 
                                     </div>
                                 </div>
@@ -37,7 +38,7 @@
         <div class="span12 relative">
 
             <div class="bubble">
-                <h4 class="left">DO YOU <span class="bold italic">LIKE</span> WHAT YOU SEE?</h4>
+                <h4 class="left">OUR SERVICES<span class="bold italic">OVERVIEW</span></h4>
 
             </div>
 
@@ -75,8 +76,9 @@
         <div class="row">
 
             <!-- PAGE HEADING -->
-            <div class="span9 offset3 textcenter">
+            <div class="span12 textcenter">
                 <span class="content-heading">WHAT WE DO</span>
+
                 <div class="content-heading-stripes"></div>
             </div>
 
@@ -84,14 +86,16 @@
             <div class="span3">
                 <div class="row">
                     <div class="span3">
+                        <h3>Our Services</h3>
                         <ul class="nav nav-list">
-                            <li class="first"><a href="about.html">ABOUT US</a></li>
-                            <li class="active"><a href="what-we-do.html">WHAT WE DO</a></li>
-                            <li><a href="team.html">OUR TEAM</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="testimonials.html">TESTIMONIALS</a></li>
-                            <li><a href="pricing.html">PRICING</a></li>
-                            <li class="last"><a href="comparison.html">COMPARISON</a></li>
+                            <li class="first active"><a href="#">Web Designing & Development</a></li>
+                            <li class="active"><a href="#">Content Management Systems</a></li>
+                            <li class="active"><a href="#">Responsive Web Design</a></li>
+                            <li class="active"><a href="#">SEO</a></li>
+                            <li class="active"><a href="#">Bulk Mail</a></li>
+                            <li class="active"><a href="#">E-Commerce Application</a></li>
+                            <li class="active"><a href="#">Social Media Marketing</a></li>
+                            <li class="last active"><a href="#">Software Development</a></li>
                         </ul>
                     </div>
                 </div>
@@ -103,8 +107,12 @@
                 <div class="row">
                     <div class="span9">
                         <div class="content-bubble drop-shadow curved">
-                            <h6><strong>WE DO MORE THAN JUST DESIGN</strong></h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <h6><strong>WE DO MORE THAN JUST DEVELOPMENT AND DESIGN</strong></h6>
+
+                            <p>We offer a comprehensive suit of superior solutions and services to promote and optimize
+                                your existing business model ranging from website design & development, web hosting and
+                                custom application development through to e-commerce implementation, content management
+                                and internal marketing. </p>
                         </div>
                         <div class="content-bubble-triangle"></div>
                     </div>
@@ -119,9 +127,12 @@
                                 <img src="assets/img/icon_mobile.png" alt=""/>
                             </div>
                             <h4>WE <strong>DESIGN</strong></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet...</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet...</p>
                             <br>
                             <a class="btn btn-small btn-green">READ MORE</a>
+
                             <div class="features-triangle"></div>
                         </div>
                     </div>
@@ -134,9 +145,11 @@
                             </div>
                             <h4>WE <strong>DEVELOP</strong></h4>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet...</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet...</p>
                             <br>
                             <a class="btn btn-small btn-green">READ MORE</a>
+
                             <div class="features-triangle"></div>
                         </div>
                     </div>
@@ -148,9 +161,12 @@
                                 <img src="assets/img/icon_laptop.png" alt=""/>
                             </div>
                             <h4>WE <strong>CONSULT</strong></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet...</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet...</p>
                             <br>
                             <a class="btn btn-small btn-green">READ MORE</a>
+
                             <div class="features-triangle"></div>
                         </div>
                     </div>
