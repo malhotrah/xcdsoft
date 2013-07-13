@@ -13,6 +13,7 @@
                                     <div class="vcenter">
 
                                         <h1 class="bold-heading">WE ARE HERE TO HELP.</h1>
+
                                         <div class="slider-buttons">
                                             <a class="btn btn-padded btn-prime drop-shadow button-curved curved-hz-1">CALLBACK</a>&nbsp;
                                             <div class="btn-group">
@@ -43,7 +44,6 @@
                 <div class="bubble">
 
                     <h4 class="left"><span class="bold italic">WE ARE AVAILABLE 24/7</span></h4>
-
 
 
                 </div>
@@ -84,23 +84,27 @@
 
             <div class="span3">
                 <div class="row">
-                    <div class="span4" >
-                        <div class="content-bubble drop-shadow curved">
-                            <div class="contact-alerts"></div>
-                            <label>Your Name</label>
-                            <input type="text" name="name" id="name">
-                            <label>Your Email</label>
-                            <input type="text" name="email" id="email">
-                            <label>Your Message</label>
-                            <textarea style="height:160px" cols="50" name="message" id="message"></textarea>
-
-                            <a id="submit" class="btn btn-prime btn-full">SEND</a>
-                        </div>
-
+                    <div class="span4">
+                        <form action="<?php echo base_url('contact/post_data');?>" data-validate="parsley" method="post">
+                            <div class="content-bubble drop-shadow curved">
+                                <div class="contact-alerts"></div>
+                                <label>Your Name</label>
+                                <input type="text" name="name" id="name">
+                                <label>Your Phone Number*</label>
+                                <input type="text" name="mobile" id="mobile" data-required="true" data-trigger="change"data-type="number">
+                                <label>Your Email*</label>
+                                <input type="text" name="email" id="email" data-required="true" data-trigger="change" data-type="email">
+                                <label>Your Message</label>
+                                <textarea style="height:160px" cols="50" name="message" id="message"></textarea>
+                                <input type="hidden" name="source" value="contact_page"/>
+                                <button type="submit" class="btn btn-prime btn-full">SEND</button>
+                        </form>
                     </div>
+
                 </div>
             </div>
-
         </div>
+
     </div>
+</div>
 </div>
