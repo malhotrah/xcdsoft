@@ -42,7 +42,7 @@
 
                                     <!-- slide #2 content -->
                                     <div class="vcenter">
-                                        <img src="<?php echo base_url('');?>assets/images/ipads.png" alt=""/>
+                                        <img src="<?php echo base_url('assets/images/ipads.png');?>" alt=""/>
                                     </div>
                                 </div>
                             </div>
@@ -113,9 +113,10 @@
 
                     <h5><strong> WEB </strong> DEVELOPMENT </h5>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna aliqua Lorem ipsum dolor sit amet...</p>
+                    <p>We work with multiple technologies to produce the most effective web applications to meet your
+                        requirements. We offer advanced features, services and utilize a mix of technologies to achieve
+                        our
+                        goals.</p>
                     <br>
 
                     <div class="features-read-more">
@@ -134,9 +135,10 @@
 
                     <h5><strong>MOBILE </strong> DEVELOPMENT</h5>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna aliqua Lorem ipsum dolor sit amet...</p>
+                    <p>We are supportive of the business requirements that may vary significantly and
+                        thus, yields a need for a mobile development, services to create value-added mobile phone
+                        applications tailored exactly to match your
+                        requirements.</p>
                     <br>
 
                     <div class="features-read-more">
@@ -155,9 +157,9 @@
 
                     <h5><strong>WEB</strong> DESIGNING</h5>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna aliqua Lorem ipsum dolor sit amet...</p>
+                    <p>We think, sweat and toil hard to create new designs that magnetically lure our customers towards
+                        their business.For us, designing is more than a business. It's our creative expression, which
+                        defines who we are and what we stand for.</p>
                     <br>
 
                     <div class="features-read-more">
@@ -176,9 +178,9 @@
 
                     <h5><strong>SEO</strong> & MARKETING</h5>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna aliqua Lorem ipsum dolor sit amet...</p>
+                    <p>We understand that the market value of your product or service is only as good as its
+                        visibility. We understand that the most important function of your website is its search-engine
+                        friendliness. So we are here to help you.</p>
                     <br>
 
                     <div class="features-read-more">
@@ -213,9 +215,10 @@
                 <div class="content-bubble drop-shadow curved">
                     <h5 class="heading">WHO WE ARE</h5>
 
-                    <p>Intuit Techno is a professional web development, web designing and search engine optimization
+                    <p>XCDSOFT is a professional web development, web designing and search engine optimization
                         company in Delhi (India)…</p>
                     <br/>
+
                     <div class="features-read-more">
                         <a class="btn btn-small btn-prime">READ MORE</a>
                     </div>
@@ -238,6 +241,7 @@
                     <p>We offer a comprehensive suit of superior solutions and services to promote and optimized your
                         existing business model...</p>
                     <br/>
+
                     <div class="features-read-more">
                         <a class="btn btn-small btn-prime">READ MORE</a>
                     </div>
@@ -259,6 +263,7 @@
                     <p>The Company anchored by the most trusted teams in the industry which believe in effective
                         solutions and on time services...</p>
                     <br/>
+
                     <div class="features-read-more">
                         <a class="btn btn-small btn-prime">READ MORE</a>
                     </div>

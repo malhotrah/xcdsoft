@@ -9,9 +9,13 @@
 class Dashboard extends CI_Controller
 {
 
-    function index()
+    public function __construct()
     {
-
+        parent::__construct();
+        validate_login();
+    }
+    public function index()
+    {
         $dashboard_model = new Dashboard_model();
         $result = $dashboard_model->get_data();
         $data['results'] = $result;

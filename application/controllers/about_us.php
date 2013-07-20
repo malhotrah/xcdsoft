@@ -8,11 +8,10 @@
  */
 class About_us extends CI_Controller
 {
-
     function index()
     {
-        $data['about']=true;
-        $this->template->build('about_us',$data);
+        $data['about'] = true;
+        $this->template->build('about_us', $data);
     }
 
 }

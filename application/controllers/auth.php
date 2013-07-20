@@ -104,7 +104,6 @@ class Auth extends CI_Controller {
 	//log the user out
 	function logout()
 	{
-
 		$this->data['title'] = "Logout";
 
 		//log the user out
