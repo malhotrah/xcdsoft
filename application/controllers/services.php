@@ -11,7 +11,14 @@ class Services extends CI_Controller
 
     function index()
     {
-        $data['services']=true;
-        $this->template->build('services',$data);
+        $data['services'] = true;
+        $this->template->build('services', $data);
     }
+
+    function content_management_system()
+    {
+        $this->template->build('service/cms');
+    }
+
+
 }

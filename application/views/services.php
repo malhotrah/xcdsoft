@@ -128,8 +128,9 @@
                             </div>
                             <h4>WE <strong>DESIGN</strong></h4>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet...</p>
+                            <p>We think, sweat and toil hard to create new designs that magnetically lure our customers
+                                towards
+                                their business.</p>
                             <br>
                             <a class="btn btn-small btn-green">READ MORE</a>
 
@@ -145,8 +146,9 @@
                             </div>
                             <h4>WE <strong>DEVELOP</strong></h4>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet...</p>
+                            <p>We work with multiple technologies to produce the most effective web applications to meet
+                                your
+                                requirements.</p>
                             <br>
                             <a class="btn btn-small btn-green">READ MORE</a>
 
@@ -162,8 +164,8 @@
                             </div>
                             <h4>WE <strong>CONSULT</strong></h4>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet...</p>
+                            <p>XcdSoft focuses on advising businesses on how best to use information
+                                technology to meet their business objectives.</p>
                             <br>
                             <a class="btn btn-small btn-green">READ MORE</a>
 

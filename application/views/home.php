@@ -20,8 +20,6 @@
 
                                         <div class="slider-buttons stripes">
 
-                                            <a class="btn btn-padded btn-prime drop-shadow button-curved curved-hz-1">SIGN
-                                                UP</a>
                                             &nbsp;
                                             <div class="btn-group">
                                                 <a class="btn"><i class="button-flash"></i></a>

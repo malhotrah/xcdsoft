@@ -61,14 +61,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="<?php echo base_url('welcome');?>"><img src="<?php echo base_url('assets/images/xcd-logo.png');?>" alt=""></a>
+            <a class="brand" href="<?php echo base_url('');?>"><img
+                    src="<?php echo base_url('assets/images/xcd-logo.png');?>" alt=""></a>
 
             <div class="nav-collapse collapse">
                 <ul class="nav">
 
                     <!-- HOME -->
-                    <?php $active_home=isset($home)?"nav-active":""; ?>
-                    <li class="<?php echo $active_home ?>"><a href="<?php echo base_url('welcome');?>">HOME</a></li>
+                    <?php $active_home = isset($home) ? "nav-active" : ""; ?>
+                    <li class="<?php echo $active_home ?>"><a href="<?php echo base_url('');?>">HOME</a></li>
 
                     <!-- ABOUT US -->
                     <li><a href="<?php echo base_url('about_us');?>">ABOUT US</a></li>
@@ -110,7 +111,7 @@
 
                     <h4 class="left">GET IN TOUCH <span class="bold italic">NOW</span></h4>
 
-                    <a href="<?php echo base_url('contact');?>"class="btn btn-padded right">CONTACT US</a>
+                    <a href="<?php echo base_url('contact');?>" class="btn btn-padded right">CONTACT US</a>
 
                 </div>
 
@@ -142,7 +143,10 @@
 
             <div class="span3 visible-desktop visible-tablet">
                 <h5 class="heading">Get Social</h5>
-                <div class="fb-like-box" data-href="https://www.facebook.com/pages/Xcdsoft/512386048830994" data-width="224" data-height="250" data-show-faces="true" data-colorscheme="dark" data-stream="false" data-show-border="false" data-header="false"></div>
+
+                <div class="fb-like-box" data-href="https://www.facebook.com/pages/Xcdsoft/512386048830994"
+                     data-width="224" data-height="250" data-show-faces="true" data-colorscheme="dark"
+                     data-stream="false" data-show-border="false" data-header="false"></div>
 
             </div>
 
@@ -159,10 +163,10 @@
             <div class="span3">
                 <div class="contact-alerts"></div>
                 <form action="" data-validate="parsley">
-                <input placeholder="Your Name" type="text" name="name" id="name" data-required="true">
-                <input placeholder="Your Email" type="text" name="email" id="email" data-required="true">
-                <textarea placeholder="Message" rows="3" cols="50" name="message" id="message"></textarea>
-                <button type="submit" id="submit" class="btn btn-black btn-full">Submit</button>
+                    <input placeholder="Your Name" type="text" name="name" id="name" data-required="true">
+                    <input placeholder="Your Email" type="text" name="email" id="email" data-required="true">
+                    <textarea placeholder="Message" rows="3" cols="50" name="message" id="message"></textarea>
+                    <button type="submit" id="submit" class="btn btn-black btn-full">Submit</button>
                 </form>
             </div>
 
@@ -174,6 +178,15 @@
 ================================================== -->
 <div class="footer">
     <div class="container">
+        <div class="row">
+            <p class="footer_tags"><a href="#">Web Development Company in delhi</a>|<a href="#">Low cost website
+                design</a>|<a href="#">Desktop software</a>|<a href="#">Website Maintenance in delhi</a>|<a href="#">PHP
+                Development</a>|<a href="#">Development
+                company in Rajouri garden</a>|<a href="#">Free website quotation</a>|<a href="#">Landing Pages
+                Design</a>|<a href="#">Logo Design</a>|<a href="#">Business card design</a>|<a href="#">Custom Web
+                Development</a>|<a href="#">SEO</a>|<a href="#">Facebook Marketing</a>|<a href="#">Bulk Mailer
+                Solution</a></p>
+        </div>
         <div class="row">
             <div class="span6">
                 <p>COPYRIGHT &copy;2012-2013 XCDSOFT. ALL RIGHTS RESERVED.</p>
@@ -200,10 +213,11 @@
 <!-- Le javascript
 ================================================== -->
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script>(function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
+    js = d.createElement(s);
+    js.id = id;
     js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
