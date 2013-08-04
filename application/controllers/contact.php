@@ -18,28 +18,63 @@ class Contact extends CI_Controller
 
     public function post_data()
     {
+        $this->load->helper('email');
         $name = $this->input->post('name');
         $email = $this->input->post('email');
         $mobile = $this->input->post('mobile');
-        $messsage = $this->input->post('message');
+        $message = $this->input->post('message');
         $source = $this->input->post('source');
+        if (empty($source)) {
+            echo "error";
+            exit;
+        }
+        if ($source == 'footer' || $source == 'Footer') {
+            if (empty($name)) {
+                echo "error";
+                exit;
+            }
+            if (!valid_email($email)) {
+                echo 'invalid_email';
+                exit;
+            }
+            $this->load->model('form_model');
+            $form_model = new Form_model();
+            $form_model->add_data($name, $mobile, $email, $message, $source);
+            $this->send_email($email);
+            echo "success";
+            exit;
+        }
 
-        $this->load->model('form_model');
-        $form_model = new Form_model();
-        $form_model->add_data($name, $mobile, $email, $messsage, $source);
-        $this->send_email($email);
-
+        if ($source == 'contact' || $source == 'Contact') {
+            if (empty($name) || empty($email) || empty($mobile)) {
+                echo "error";
+                exit;
+            }
+            if (!valid_email($email)) {
+                echo 'invalid_email';
+                exit;
+            }
+            $this->load->model('form_model');
+            $form_model = new Form_model();
+            $form_model->add_data($name, $mobile, $email, $message, $source);
+            $this->send_email($email);
+            echo "success";
+            exit;
+        }
     }
 
     public function send_email($email)
     {
-        $this->load->library('email');
-        $this->email->from('no-reply@example.com', 'XCD Soft');
-        $this->email->to($email);
-        $this->email->subject('Email Test');
-        $this->email->message('thank you');
-        $this->email->send();
-       
+        try {
+            $this->load->library('email');
+            $this->email->from('no-reply@example.com', 'XCD Soft');
+            $this->email->to($email);
+            $this->email->subject('Email Test');
+            $this->email->message('thank you');
+            $this->email->send();
+        } catch (Exception $e) {
+            return true;
+        }
 
     }
 

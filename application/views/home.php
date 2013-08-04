@@ -18,14 +18,14 @@
                                     <div class="vcenter">
                                         <h1 class="bold-heading">WE ARE PROFESSIONALS.</h1>
 
-                                        <div class="slider-buttons stripes">
-
-                                            &nbsp;
-                                            <div class="btn-group">
-                                                <a class="btn"><i class="button-flash"></i></a>
-                                                <a class="btn">OUR PROJECTS</a>
-                                            </div>
-                                        </div>
+<!--                                        <div class="slider-buttons stripes">
+<!---->
+<!--                                            &nbsp;-->
+<!--<!--                                            <div class="btn-group">-->
+<!--<!--                                                <a class="btn"><i class="button-flash"></i></a>-->
+<!--<!--                                                <a class="btn">OUR PROJECTS</a>-->
+<!--<!--                                            </div>-->
+<!--                                        </div>-->
                                     </div>
 
                                 </div>
@@ -40,7 +40,7 @@
 
                                     <!-- slide #2 content -->
                                     <div class="vcenter">
-                                        <img src="<?php echo base_url('assets/images/ipads.png');?>" alt=""/>
+                                        <img src="<?php echo base_url('assets/images/webdesign.png');?>" alt=""/>
                                     </div>
                                 </div>
                             </div>
@@ -55,7 +55,7 @@
                                     <!-- slide #3 content -->
                                     <div class="slider-frame">
                                         <div class="slider-frame-image"
-                                             style="background-image: url(assets/images/laptop-top.png)">
+                                             style="background-image: url('assets/images/laptop-top.png)">
                                         </div>
 
                                     </div>
@@ -203,9 +203,9 @@
 
             <div class="span4">
                 <div class="content-image">
-                    <a href="<?php echo base_url('assets/images/image1.png');?>" class="fancybox">
-                        <span class="content-image-overlay"></span>
-                        <img src="<?php echo base_url('assets/images/image1.png');?>" alt="">
+                    <a href="<?php echo base_url('about_us');?>">
+<!--                        <span class="content-image-overlay"></span>-->
+                        <img src="<?php echo base_url('assets/images/who-we-are.png');?>" alt="">
                     </a>
 
                 </div>
@@ -218,7 +218,7 @@
                     <br/>
 
                     <div class="features-read-more">
-                        <a class="btn btn-small btn-prime">READ MORE</a>
+                        <a href="<?php echo base_url('about_us');?>" class="btn btn-small btn-prime">READ MORE</a>
                     </div>
                 </div>
 
@@ -227,9 +227,9 @@
 
             <div class="span4">
                 <div class="content-image">
-                    <a href="<?php echo base_url('assets/images/image2.png');?>" class="fancybox">
-                        <span class="content-image-overlay"></span>
-                        <img src="<?php echo base_url('assets/images/image2.png');?>" alt="">
+                    <a href="<?php echo base_url('about_us');?>">
+<!--                        <span class="content-image-overlay"></span>-->
+                        <img src="<?php echo base_url('assets/images/what-we-do.png');?>" alt="">
                     </a>
                 </div>
 
@@ -241,7 +241,7 @@
                     <br/>
 
                     <div class="features-read-more">
-                        <a class="btn btn-small btn-prime">READ MORE</a>
+                        <a  href="<?php echo base_url('about_us');?>" class="btn btn-small btn-prime">READ MORE</a>
                     </div>
                 </div>
 
@@ -249,9 +249,9 @@
 
             <div class="span4">
                 <div class="content-image">
-                    <a href="<?php echo base_url('assets/images/image2.png');?>" class="fancybox">
+                    <a href="<?php echo base_url('about_us');?>">
                         <span class="content-image-overlay"></span>
-                        <img src="<?php echo base_url('assets/images/image3.png');?>" alt="">
+                        <img src="<?php echo base_url('assets/images/why-us.png');?>" alt="">
                     </a>
                 </div>
 
@@ -263,7 +263,7 @@
                     <br/>
 
                     <div class="features-read-more">
-                        <a class="btn btn-small btn-prime">READ MORE</a>
+                        <a href="<?php echo base_url('about_us');?>" class="btn btn-small btn-prime">READ MORE</a>
                     </div>
                 </div>
 

@@ -72,12 +72,14 @@
                     <li class="<?php echo $active_home ?>"><a href="<?php echo base_url('');?>">HOME</a></li>
 
                     <!-- ABOUT US -->
-                    <li><a href="<?php echo base_url('about_us');?>">ABOUT US</a></li>
+                    <?php $active_about = isset($about) ? "nav-active" : ""; ?>
+                    <li class="<?php echo $active_about ?>"><a href="<?php echo base_url('about_us');?>">ABOUT US</a>
+                    </li>
 
                     <!-- SERVICES -->
-                    <li class="dropdown">
+                    <?php $active_service = isset($services) ? "nav-active" : ""; ?>
+                    <li class="dropdown <?php echo $active_service ?>">
                         <a href="<?php echo base_url('services');?>">SERVICES</a>
-
                     </li>
 
                     <!-- POTFOLIO -->
@@ -85,9 +87,9 @@
                         <a href="<?php echo base_url('portfolio');?>">PORTFOLIO</a>
 
                     </li>
-
+                    <?php $active_contact = isset($contact) ? "nav-active" : ""; ?>
                     <!-- CONTACT US -->
-                    <li class="last dropdown">
+                    <li class="last dropdown <?php echo $active_contact ?>">
                         <a href="<?php echo base_url('contact');?>">CONTACT</a>
 
                     </li>
@@ -142,7 +144,7 @@
             </div>
 
             <div class="span3 visible-desktop visible-tablet">
-                <h5 class="heading">Get Social</h5>
+                <h5 class="heading">GET SOCIAL</h5>
 
                 <div class="fb-like-box" data-href="https://www.facebook.com/pages/Xcdsoft/512386048830994"
                      data-width="224" data-height="250" data-show-faces="true" data-colorscheme="dark"
@@ -152,21 +154,39 @@
 
             <div class="span3 visible-desktop visible-tablet">
                 <div class="latest-posts">
-                    <h5 class="heading">LATEST POSTS</h5>
-                    <a class="first">Lorem ipsum dolor sit amet, consect</a>
-                    <a>sed do eiusmod tempor incididunt</a>
-                    <a>ut labore et dolore magna sed do eiusmod tempor</a>
-                    <a class="last">consectetur adipisicing elit, sed do</a>
+                    <h5 class="heading">LATEST TWEETS</h5>
+                    <a class="twitter-timeline" href="https://twitter.com/xcdsoft" data-widget-id="362993413450252292">Tweets
+                        by @xcdsoft</a>
+                    <script>!function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = p + "://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, "script", "twitter-wjs");</script>
+
+
+                    <!--                    <a class="first">Lorem ipsum dolor sit amet, consect</a>-->
+                    <!--                    <a>sed do eiusmod tempor incididunt</a>-->
+                    <!--                    <a>ut labore et dolore magna sed do eiusmod tempor</a>-->
+                    <!--                    <a class="last">consectetur adipisicing elit, sed do</a>-->
                 </div>
             </div>
 
             <div class="span3">
+                <h5 class="heading">SUBMIT QUERY</h5>
+
                 <div class="contact-alerts"></div>
-                <form action="" data-validate="parsley">
-                    <input placeholder="Your Name" type="text" name="name" id="name" data-required="true">
-                    <input placeholder="Your Email" type="text" name="email" id="email" data-required="true">
+                <form id="footerContact" action="<?php echo base_url('contact/post_data')?>"novalidate=""
+                      method="post">
+                    <input placeholder="Your Name" type="text" name="name" id="name">
+                    <input placeholder="Your Email" type="email" name="email" id="email">
                     <textarea placeholder="Message" rows="3" cols="50" name="message" id="message"></textarea>
+                    <input type="hidden" name="source" id="source" value="footer"/>
                     <button type="submit" id="submit" class="btn btn-black btn-full">Submit</button>
+                    <span id="ajax-loader-footer" style="display: none;"><img src="<?php echo base_url('assets/images/ajax-loader.gif')?>"</span>
                 </form>
             </div>
 
