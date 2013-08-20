@@ -9,20 +9,25 @@
 class Form_model extends CI_Model
 {
 
-    function add_data($name,$mobile,$email,$message,$source)
+    function add_data($name, $mobile, $email, $message, $source)
     {
-        $date=date('Y-m-d');
-        $data=array(
-            'name'=>$name,
-            'mobile'=>$mobile,
-            'email'=>$email,
-            'message'=>$message,
-            'source'=>$source,
-            'create_date'=>$date
-        );
+        try {
+            $date = date('Y-m-d');
+            $data = array(
+                'name' => $name,
+                'mobile' => $mobile,
+                'email' => $email,
+                'message' => $message,
+                'source' => $source,
+                'create_date' => $date
+            );
 
-        $this->db->insert('form_data',$data);
-        return $this->db->insert_id();
+            $this->db->insert('form_data', $data);
+            return $this->db->insert_id();
+        } catch (Exception $e) {
+            return false;
+        }
+
     }
 
 }

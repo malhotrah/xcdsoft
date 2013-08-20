@@ -23,6 +23,7 @@
     <link href="<?php echo base_url('assets/css/dropkick.css');?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/jquery.fancybox.css');?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/parsley.css');?>" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
     <script>
         $(document).ready(function () {
@@ -178,13 +179,13 @@
             <div class="span3">
                 <h5 class="heading">SUBMIT QUERY</h5>
 
-                <div class="contact-alerts"></div>
+                <div id="contactAlerts"></div>
                 <form id="footerContact" action="<?php echo base_url('contact/post_data')?>"novalidate=""
                       method="post">
-                    <input placeholder="Your Name" type="text" name="name" id="name">
-                    <input placeholder="Your Email" type="email" name="email" id="email">
-                    <textarea placeholder="Message" rows="3" cols="50" name="message" id="message"></textarea>
-                    <input type="hidden" name="source" id="source" value="footer"/>
+                    <input placeholder="Your Name" type="text" name="name" id="footerName">
+                    <input placeholder="Your Email" type="email" name="email" id="footerEmail">
+                    <textarea placeholder="Message" rows="3" cols="50" name="message" id="footerMessage"></textarea>
+                    <input type="hidden" name="source" id="footerSource" value="footer"/>
                     <button type="submit" id="submit" class="btn btn-black btn-full">Submit</button>
                     <span id="ajax-loader-footer" style="display: none;"><img src="<?php echo base_url('assets/images/ajax-loader.gif')?>"</span>
                 </form>
@@ -241,6 +242,65 @@
     js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<script>
+
+jQuery(document).ready(function ($) {
+    function isEmailValid(emailAddress) {
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return filter.test(emailAddress);
+    }
+
+
+$('#footerContact').submit(function (e) {
+e.preventDefault();
+var email = $('#footerEmail').val();
+var formMessage = $("#contactAlerts");
+    formMessage.removeClass();
+
+            if (!email) {
+                formMessage.html("Please enter your email-Id" + "<button type='button' class='close' data-dismiss='alert'>×</button>").addClass('alert-error').addClass('alert');
+                return false;
+            }
+
+            if(!isEmailValid(email)){
+                formMessage.html("Please enter an valid email-Id" + "<button type='button' class='close' data-dismiss='alert'>×</button>").addClass('alert-error').addClass('alert');
+                return false;
+            }
+
+$("#ajax-loader-footer").show();
+/* Get some values from elements on the page: */
+var values = $(this).serialize();
+
+/* Send the data using post and put the results in a div */
+var url=$('#footerContact')[0].action;
+$.ajax({
+url: url,
+type: "post",
+data: values,
+dataType: "json",
+success: function (data) {
+$('#footerContact')[0].reset();
+$("#ajax-loader-footer").hide();
+formMessage.show();
+formMessage.html(data.message + "<button type='button' class='close' data-dismiss='alert'>×</button>");
+if (data.status) {
+formMessage.addClass('alert-success').addClass('alert');
+} else {
+formMessage.addClass('alert-error').addClass('alert');
+}
+
+},
+error: function () {
+$("#ajax-loader-footer").hide();
+formMessage.html("Error while sending your query");
+}
+});
+});
+
+});
+
+
+</script>
 <script src="<?php echo base_url('assets/js/bootstrap.js');?>"></script>
 <script src="<?php echo base_url('assets/js/tinynav.js');?>"></script>
 <script src="<?php echo base_url('assets/js/scroll.js');?>"></script>
